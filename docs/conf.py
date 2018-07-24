@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Chat21 Web Widget'
+project = u'TileDesk'
 copyright = u'2018, Frontiere21'
 author = u'Frontiere21'
 
