@@ -48,7 +48,7 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = '.md'
 
 # The master toctree document.
 master_doc = 'index'
@@ -103,7 +103,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Chat21WebWidgetdoc'
+htmlhelp_basename = 'TileDeskdocs'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -130,7 +130,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Chat21WebWidget.tex', u'Chat21 Web Widget Documentation',
+    (master_doc, 'Tiledeskdocs.tex', u'TileDesk Documentation',
      u'Frontiere21', 'manual'),
 ]
 
@@ -140,7 +140,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'chat21webwidget', u'Chat21 Web Widget Documentation',
+    (master_doc, 'TileDeskdocs', u'Tiledesk Documentation',
      [author], 1)
 ]
 
@@ -151,8 +151,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Chat21WebWidget', u'Chat21 Web Widget Documentation',
-     author, 'Chat21WebWidget', 'One line description of project.',
+    (master_doc, 'TileDeskdocs', u'TileDeskdocs Documentation',
+     author, 'TileDeskdocs', 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -162,5 +162,3 @@ from recommonmark.parser import CommonMarkParser
 source_parsers = {
     '.md': CommonMarkParser,
 }
-
-source_suffix = ['.rst', '.md']
