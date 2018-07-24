@@ -107,7 +107,7 @@ Example:
 [Full example here]( https://github.com/chat21/chat21-web-widget/blob/master/src/test.html)
  
 
-### Before sending messsage
+## Before sending messsage
 This event will be fired before the message sending. Use this event to add custom attributes to your chat message.
 
 Important payload of event_data:
@@ -147,7 +147,7 @@ Example. Programmatic setting of the preChatForm data:
 ```
 
 
-### After messsage sent
+## After messsage sent
 
 This event is generated after the message has been sent.
 
@@ -172,7 +172,7 @@ Example:
 ```
 
 
-#### Load Parameters event
+## Load Parameters event
 
 This event will be fired before the tiledesk parameters is loaded. Use this event to change at runtime your TileDesk settings.
 
