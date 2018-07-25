@@ -194,6 +194,12 @@ Example:
 
 This event will be fired before the tiledesk parameters is loaded. Use this event to change at runtime your TileDesk settings.
 
+Important payload of event_data:
+
+| Parameter               | Type      | Description                      |
+| ----------------------- | --------- | -------------------------------- |
+| detail.default_settings | Object    | the constructor default settings |
+
 Example. Set welcome message with current date
 
 ```
