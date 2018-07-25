@@ -4,7 +4,7 @@ This guide will show you how to get started as quickly as possible with the Web 
 
 # Install the Web HTML Widget
 
-To chat with your visitors embeds the widget on your site.
+To chat with your visitors embed the widget on your site.
 Copy the following script and insert it in the HTML source between the HEAD tags:
 
 ```
