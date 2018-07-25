@@ -65,6 +65,23 @@ Example for a widget with the preChatForm enabled and a 10 seconds calloutTimer 
     }(document, 'script', 'tiledesk-jssdk'));
 </script>
 ```
+# Methods
+
+## Open the widget
+
+This will open the widget:
+
+```
+window.tiledesk.open();
+```
+## Minimize the widget
+
+This will minimize the widget:
+
+```
+window.tiledesk.close();
+```
+
 
 # Events
 
