@@ -32,6 +32,7 @@ To get your TILEDESK_PROJECT_ID go to the TileDesk Dashboard and click on the Wi
 ## Configuration ##
 
 You can customize the widget passing these parameters to  window.tiledeskSettings object:
+
 * **projectid**. The TileDesk project id. Find your TileDesk ProjectID in the TileDesk Dashboard under the Widget menu.
 
 
