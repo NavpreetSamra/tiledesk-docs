@@ -35,10 +35,9 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **projectid**. The TileDesk project id. Find your TileDesk ProjectID in the TileDesk Dashboard under the Widget menu.
 
-
 * **preChatForm**: You can require customers to enter information like name and email before sending a chat message by enabling the Pre-Chat form. Permitted values: true, false. The default value is false.
 
-* **align**: Make the Chat available on the Right or on the Left of the screen. Permitted values: 'right', 'left'. Default value is right.
+* **align**: Make the chat available on the Right or on the Left of the screen. Permitted values: 'right', 'left'. Default value is right.
 
 * **calloutTimer**: Proactively open the chat windows to increase the customer engagement. Permitted values: -1 (Disabled), 0 (Immediatly) or a positive integer value. For exmaple: 5 (After 5 seconds),  10 (After 10 seconds).
 
@@ -110,9 +109,6 @@ Example:
 ```
  <script type="application/javascript">    
       window.tileDeskAsyncInit = function() {
-       window.tiledesk.on('loadParams', function(event_data) {
-         console.log("loadParams called", event_data);
-       });
        window.tiledesk.on('beforeMessageSend', function(event_data) {
          var message =  event_data.detail;
          console.log("beforeMessageSend called ", message);
@@ -198,13 +194,13 @@ Example:
 
 This event will be fired before the tiledesk parameters is loaded. Use this event to change at runtime your TileDesk settings.
 
-Example:
+Example. Set welcome message with current date
 
 ```
 <script type="application/javascript">    
       window.tileDeskAsyncInit = function() {
        window.tiledesk.on('loadParams', function(event_data) {
-         console.log("loadParams called", event_data);
+         window.tiledeskSettings.wellcomeMsg = " Hello at: " + new Date().toLocaleString();
        });
       }
 </script>
