@@ -107,7 +107,7 @@ Example:
  
 
 ## Before sending messsage
-This event will be fired before the message sending. Use this event to add custom attributes to your chat message.
+This event will be fired before the message sending. Use this event to add user information or custom attributes to your chat message.
 
 Important payload of event_data:
 
@@ -115,6 +115,20 @@ Important payload of event_data:
 | ---------- | ------- | ---------------------------------- |
 | detail     | Object  | the message that is being sent     |
 
+Example. Programmatic setting user name and email
+
+```
+ <script type="application/javascript">    
+      window.tileDeskAsyncInit = function() {
+       window.tiledesk.on('beforeMessageSend', function(event_data) {
+         var message =  event_data.detail;
+         console.log("beforeMessageSend called ", message);
+         message.attributes.userName = "Andrew Lee";
+         message.attributes.userEmail = "andrewlee@f21.com";
+       });
+      }
+</script>
+```
 
 Example. Add a custom attribute (page title) to the message.
 
@@ -130,20 +144,7 @@ Example. Add a custom attribute (page title) to the message.
 </script>
 ```
 
-Example. Programmatic setting of the preChatForm data:
 
-```
- <script type="application/javascript">    
-      window.tileDeskAsyncInit = function() {
-       window.tiledesk.on('beforeMessageSend', function(event_data) {
-         var message =  event_data.detail;
-         console.log("beforeMessageSend called ", message);
-         message.attributes.userName = "Andrew Lee";
-         message.attributes.userEmail = "andrewlee@f21.com";
-       });
-      }
-</script>
-```
 
 
 ## After messsage sent
