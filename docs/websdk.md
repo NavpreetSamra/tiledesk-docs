@@ -32,22 +32,22 @@ To get your TILEDESK_PROJECT_ID go to the TileDesk Dashboard and click on the Wi
 ## Configuration ##
 
 You can customize the widget passing these parameters to  window.tiledeskSettings object:
-* projectid. The TileDesk project id. Find your TileDesk ProjectID in the TileDesk Dashboard under the Widget menu.
+* **projectid**. The TileDesk project id. Find your TileDesk ProjectID in the TileDesk Dashboard under the Widget menu.
 
 
-* preChatForm: You can require customers to enter information like name and email before sending a chat message by enabling the Pre-Chat form. Permitted values: true, false. The default value is false.
+* **preChatForm**: You can require customers to enter information like name and email before sending a chat message by enabling the Pre-Chat form. Permitted values: true, false. The default value is false.
 
-* align: Make the Chat available on the Right or on the Left of the screen. Permitted values: 'right', 'left'. Default value is right.
+* **align**: Make the Chat available on the Right or on the Left of the screen. Permitted values: 'right', 'left'. Default value is right.
 
-* calloutTimer: Proactively open the chat windows to increase the customer engagement. Permitted values: -1 (Disabled), 0 (Immediatly) or a positive integer value. For exmaple: 5 (After 5 seconds),  10 (After 10 seconds).
+* **calloutTimer**: Proactively open the chat windows to increase the customer engagement. Permitted values: -1 (Disabled), 0 (Immediatly) or a positive integer value. For exmaple: 5 (After 5 seconds),  10 (After 10 seconds).
 
-* wellcomeMsg: Set the widget welcome message. Value type : string
+* **wellcomeMsg**: Set the widget welcome message. Value type : string
 
-* hideHeaderCloseButton: Hide the close button in the widget header. Permitted values: true, false. The default value is false.
+* **hideHeaderCloseButton**: Hide the close button in the widget header. Permitted values: true, false. The default value is false.
 
-* projectname. If you want to display the project name in the conversations, set the projectname field. It is advisable if you need to manage multiple projects. Find your TileDesk Project Name in the TileDesk Dashboard. Value type : string
+* **projectname**. If you want to display the project name in the conversations, set the projectname field. It is advisable if you need to manage multiple projects. Find your TileDesk Project Name in the TileDesk Dashboard. Value type : string
 
-* lang : With this configuration it is possible to force the widget lang. The widget will try to get the browser lang, if it is not possible it will use the default "en" lang
+* **lang** : With this configuration it is possible to force the widget lang. The widget will try to get the browser lang, if it is not possible it will use the default "en" lang
 
 Example for a widget with the preChatForm enabled and a 10 seconds calloutTimer with left alignment:
 
