@@ -41,6 +41,10 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **calloutTimer**: Proactively open the chat windows to increase the customer engagement. Permitted values: -1 (Disabled), 0 (Immediatly) or a positive integer value. For exmaple: 5 (After 5 seconds),  10 (After 10 seconds).
 
+* **userFullname***: Current user fullname. Set this parameter to specify the current user fullname.
+
+* **userEmail***: Current user email address. Set this parameter to specify the current user email address.
+
 * **wellcomeMsg**: Set the widget welcome message. Value type : string
 
 * **hideHeaderCloseButton**: Hide the close button in the widget header. Permitted values: true, false. The default value is false.
@@ -55,7 +59,7 @@ Example for a widget with the preChatForm enabled and a 10 seconds calloutTimer 
 <script type="application/javascript">
   window.tiledeskSettings = 
     {
-      projectid: "5af02d8f705ac600147f0cbb",
+      projectid: "5b55e806c93dde00143163dd",
       preChatForm: true,
       calloutTimer: 10,
       align: 'left'
@@ -69,6 +73,28 @@ Example for a widget with the preChatForm enabled and a 10 seconds calloutTimer 
     }(document, 'script', 'tiledesk-jssdk'));
 </script>
 ```
+
+Example for a widget with current user fullname and email
+
+```
+<script type="application/javascript">
+      window.tiledeskSettings = 
+          {
+              projectid: "5b55e806c93dde00143163dd",
+              userFullname: "Andrea Leo",
+              userEmail: "andrea.leo@f21.it"
+          };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id; //js.async=!0;
+        js.src = "./tiledesk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'tiledesk-jssdk'));
+    </script>
+```
+
 # Methods
 
 ## Open the widget
@@ -124,6 +150,29 @@ Example:
 [Full example here]( https://github.com/chat21/chat21-web-widget/blob/master/src/test.html)
  
 
+## Load Parameters event
+
+This event will be fired before the tiledesk parameters is loaded. Use this event to change at runtime your TileDesk settings.
+
+Important payload of event_data:
+
+| Parameter               | Type      | Description                      |
+| ----------------------- | --------- | -------------------------------- |
+| detail.default_settings | Object    | the constructor default settings |
+
+Example. Set welcome message with current date
+
+```
+<script type="application/javascript">    
+      window.tileDeskAsyncInit = function() {
+       window.tiledesk.on('loadParams', function(event_data) {
+         window.tiledeskSettings.wellcomeMsg = " Hello at: " + new Date().toLocaleString();
+       });
+      }
+</script>
+```
+
+
 ## Before sending messsage
 This event will be fired before the message sending. Use this event to add user information or custom attributes to your chat message.
 
@@ -133,20 +182,6 @@ Important payload of event_data:
 | ---------- | ------- | ---------------------------------- |
 | detail     | Object  | the message that is being sent     |
 
-Example. Programmatic setting user name and email
-
-```
- <script type="application/javascript">    
-      window.tileDeskAsyncInit = function() {
-       window.tiledesk.on('beforeMessageSend', function(event_data) {
-         var message =  event_data.detail;
-         console.log("beforeMessageSend called ", message);
-         message.attributes.userName = "Andrew Lee";
-         message.attributes.userEmail = "andrewlee@f21.com";
-       });
-      }
-</script>
-```
 
 Example. Add a custom attribute (page title) to the message.
 
@@ -155,7 +190,6 @@ Example. Add a custom attribute (page title) to the message.
       window.tileDeskAsyncInit = function() {
        window.tiledesk.on('beforeMessageSend', function(event_data) {
          var message =  event_data.detail;
-         console.log("beforeMessageSend called ", message);
          message.attributes.pagetitle = document.title;
        });
       }
@@ -189,28 +223,6 @@ Example:
 </script>
 ```
 
-
-## Load Parameters event
-
-This event will be fired before the tiledesk parameters is loaded. Use this event to change at runtime your TileDesk settings.
-
-Important payload of event_data:
-
-| Parameter               | Type      | Description                      |
-| ----------------------- | --------- | -------------------------------- |
-| detail.default_settings | Object    | the constructor default settings |
-
-Example. Set welcome message with current date
-
-```
-<script type="application/javascript">    
-      window.tileDeskAsyncInit = function() {
-       window.tiledesk.on('loadParams', function(event_data) {
-         window.tiledeskSettings.wellcomeMsg = " Hello at: " + new Date().toLocaleString();
-       });
-      }
-</script>
-```
 
 
 
