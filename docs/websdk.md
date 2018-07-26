@@ -160,6 +160,21 @@ Important payload of event_data:
 | ----------------------- | --------- | -------------------------------- |
 | detail.default_settings | Object    | the constructor default settings |
 
+Example. Set welcome current user fullname from localStorage
+
+```
+<script type="application/javascript">    
+    //set fullname to localstorage
+    localStorage.setItem("user", "Andrea from localStorage");
+    
+      window.tileDeskAsyncInit = function() {
+       window.tiledesk.on('loadParams', function(event_data) {
+          window.tiledeskSettings.userFullname = localStorage.getItem("user");
+       });
+      }
+</script>
+```
+
 Example. Set welcome message with current date
 
 ```
