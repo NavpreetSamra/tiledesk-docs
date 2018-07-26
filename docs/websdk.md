@@ -41,9 +41,9 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **calloutTimer**: Proactively open the chat windows to increase the customer engagement. Permitted values: -1 (Disabled), 0 (Immediatly) or a positive integer value. For exmaple: 5 (After 5 seconds),  10 (After 10 seconds).
 
-* **userFullname***: Current user fullname. Set this parameter to specify the current user fullname.
+* **userFullname**: Current user fullname. Set this parameter to specify the current user fullname.
 
-* **userEmail***: Current user email address. Set this parameter to specify the current user email address.
+* **userEmail**: Current user email address. Set this parameter to specify the current user email address.
 
 * **wellcomeMsg**: Set the widget welcome message. Value type : string
 
