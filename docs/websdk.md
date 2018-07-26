@@ -182,6 +182,18 @@ Important payload of event_data:
 | ---------- | ------- | ---------------------------------- |
 | detail     | Object  | the message that is being sent     |
 
+Example. Programmatic setting custom user metadata
+
+```
+ <script type="application/javascript">    
+      window.tileDeskAsyncInit = function() {
+       window.tiledesk.on('beforeMessageSend', function(event_data) {
+         var message =  event_data.detail;
+         message.attributes.userCompany = "Frontiere21";
+       });
+      }
+</script>
+```
 
 Example. Add a custom attribute (page title) to the message.
 
