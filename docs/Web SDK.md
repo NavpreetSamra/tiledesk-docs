@@ -130,7 +130,7 @@ Arguments:
 | handler      | Function  | YES       | Function with the signature function(event_data) |
 
 
-### Example 3. Console log example
+### Example 3. Logging of widget events
 
 ```
  <script type="application/javascript">    
@@ -176,6 +176,8 @@ Important payload of event_data:
       }
 </script>
 ```
+[Full example here]( https://github.com/chat21/chat21-web-widget/blob/master/src/test.html)
+
 
 ### Example 5. Widget with welcome message with current date
 
@@ -212,6 +214,9 @@ Example. Programmatic setting custom user metadata
 </script>
 ```
 
+[Full example here]( https://github.com/chat21/chat21-web-widget/blob/master/src/test.html)
+
+
 Example. Add a custom attribute (page title) to the message.
 
 ```
@@ -224,6 +229,9 @@ Example. Add a custom attribute (page title) to the message.
       }
 </script>
 ```
+
+[Full example here]( https://github.com/chat21/chat21-web-widget/blob/master/src/test.html)
+
 
 
 
