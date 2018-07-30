@@ -165,13 +165,13 @@ Important payload of event_data:
 ```
 <script type="application/javascript">    
     //set fullname to localstorage
-    localStorage.setItem("userfullname", "Andrea from localStorage");
-    localStorage.setItem("userEmail", "andrea.leo@f21.it");
+    localStorage.setItem("user_fullname", "Andrea from localStorage");
+    localStorage.setItem("user_email", "andrea.leo@f21.it");
     
       window.tileDeskAsyncInit = function() {
        window.tiledesk.on('loadParams', function(event_data) {
-          window.tiledeskSettings.userFullname = localStorage.getItem("userfullname");
-          window.tiledeskSettings.userEmail = localStorage.getItem("userEmail");
+          window.tiledeskSettings.userFullname = localStorage.getItem("user_fullname");
+          window.tiledeskSettings.userEmail = localStorage.getItem("user_email");
        });
       }
 </script>
