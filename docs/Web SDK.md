@@ -53,28 +53,7 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **lang** : With this configuration it is possible to force the widget lang. The widget will try to get the browser lang, if it is not possible it will use the default "en" lang
 
-Example for a widget with the preChatForm enabled and a 10 seconds calloutTimer with left alignment:
-
-```
-<script type="application/javascript">
-  window.tiledeskSettings = 
-    {
-      projectid: "5b55e806c93dde00143163dd",
-      preChatForm: true,
-      calloutTimer: 10,
-      align: 'left'
-    };
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id; //js.async=!0;
-      js.src = "https://widget.tiledesk.com/tiledesk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'tiledesk-jssdk'));
-</script>
-```
-
-Example for a widget with current user fullname and email
+### Example 1. Widget with user fullname and email
 
 ```
 <script type="application/javascript">
@@ -94,6 +73,27 @@ Example for a widget with current user fullname and email
       }(document, 'script', 'tiledesk-jssdk'));
     </script>
 ```
+### Example 2. Widget with preChatForm and left alignment:
+
+```
+<script type="application/javascript">
+  window.tiledeskSettings = 
+    {
+      projectid: "5b55e806c93dde00143163dd",
+      preChatForm: true,
+      align: 'left'
+    };
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id; //js.async=!0;
+      js.src = "https://widget.tiledesk.com/tiledesk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'tiledesk-jssdk'));
+</script>
+```
+
+
 
 # Methods
 
@@ -130,7 +130,7 @@ Arguments:
 | handler      | Function  | YES       | Function with the signature function(event_data) |
 
 
-Example:
+### Example 3. Console log example
 
 ```
  <script type="application/javascript">    
@@ -160,22 +160,24 @@ Important payload of event_data:
 | ----------------------- | --------- | -------------------------------- |
 | detail.default_settings | Object    | the constructor default settings |
 
-Example. Set the visitor fullname from localStorage
+### Example 4. Widget with visitor fullname and email from localStorage
 
 ```
 <script type="application/javascript">    
     //set fullname to localstorage
-    localStorage.setItem("user", "Andrea from localStorage");
+    localStorage.setItem("userfullname", "Andrea from localStorage");
+    localStorage.setItem("userEmail", "andrea.leo@f21.it");
     
       window.tileDeskAsyncInit = function() {
        window.tiledesk.on('loadParams', function(event_data) {
-          window.tiledeskSettings.userFullname = localStorage.getItem("user");
+          window.tiledeskSettings.userFullname = localStorage.getItem("userfullname");
+          window.tiledeskSettings.userEmail = localStorage.getItem("userEmail");
        });
       }
 </script>
 ```
 
-Example. Set welcome message with current date
+### Example 5. Widget with welcome message with current date
 
 ```
 <script type="application/javascript">    
