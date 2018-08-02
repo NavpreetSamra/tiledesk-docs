@@ -22,8 +22,13 @@ Install on your server the following components:
 
 * [Chat21 Ionic Web App](https://github.com/chat21/chat21-ionic)
 
+## Mobile apps
 
-## Mobile
+* [Tiledesk Android app](https://github.com/Tiledesk/tiledesk-android)
+
+* [Tiledesk iOS app](https://github.com/Tiledesk/tiledesk-ios-app)
+
+## Chat21 mobile SDKs
 
 * [Chat21 Android SDK](https://github.com/chat21/chat21-android-sdk)
 
