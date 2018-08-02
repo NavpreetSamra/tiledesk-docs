@@ -1,6 +1,7 @@
 # Welcome to the Tiledesk documentation
 Tiledesk is an Open Source Live Chat for Web and Mobile Support with integrated Bot.
 Create a free account to [https://www.tiledesk.com](https://www.tiledesk.com)
+Tiledesk uses Chat21 as a chat messaging platform. More info about Chat21 [here](https://www.chat21.org)
 
 # SDKs
 * [Web SDK](Web SDK.md) for further details. 
