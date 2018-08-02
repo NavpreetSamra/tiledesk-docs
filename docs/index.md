@@ -6,7 +6,7 @@ Create a free account to [https://www.tiledesk.com](https://www.tiledesk.com)
 * [Web SDK](Web SDK.md) for further details. 
 * [Android SDK](https://github.com/Tiledesk/tiledesk-android-sdk)
 * [iOS SDK](https://github.com/Tiledesk/tiledesk-ios-sdk)
-* API coming soon
+* [REST API](https://github.com/Tiledesk/tiledesk-api-nodejs/blob/master/docs/api.md)
 
 # Install on your server
 
