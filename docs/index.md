@@ -5,7 +5,7 @@ Create a free account to [https://www.tiledesk.com](https://www.tiledesk.com).
 Tiledesk uses Chat21 as a chat messaging platform. More info about Chat21 [here](https://www.chat21.org)
 
 # SDKs
-* [Web SDK](Web SDK.md) for further details. 
+* [Web SDK](Web SDK.md)
 * [Android SDK](https://github.com/Tiledesk/tiledesk-android-sdk)
 * [iOS SDK](https://github.com/Tiledesk/tiledesk-ios-sdk)
 * [REST API](https://github.com/Tiledesk/tiledesk-api-nodejs/blob/master/docs/api.md)
