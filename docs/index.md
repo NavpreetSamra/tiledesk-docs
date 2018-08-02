@@ -35,7 +35,7 @@ Install on your server the following components:
 * [Chat21 iOS SDK](https://github.com/chat21/chat21-ios-sdk)
 
 
-See more :
+GitHub projects:
 
-* About Tiledesk here [https://github.com/tiledesk](https://github.com/tiledesk)
-* About Chat21 here [https://github.com/chat21](https://github.com/chat21)
+* [Tiledesk project](https://github.com/tiledesk)
+* [Chat21 project](https://github.com/chat21)
