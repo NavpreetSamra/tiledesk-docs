@@ -9,6 +9,7 @@ Tiledesk uses Chat21 as a chat messaging platform. More info about Chat21 [here]
 * [Android SDK](https://github.com/Tiledesk/tiledesk-android-sdk)
 * [iOS SDK](https://github.com/Tiledesk/tiledesk-ios-sdk)
 * [REST API](https://github.com/Tiledesk/tiledesk-api-nodejs/blob/master/docs/api.md)
+* [Chat REST API](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/api.md)
 
 # Install on your server
 
