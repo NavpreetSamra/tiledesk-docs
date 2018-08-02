@@ -2,10 +2,10 @@
 Tiledesk is an Open Source Live Chat for Web and Mobile Support with integrated Bot.
 Create a free account to [https://www.tiledesk.com](https://www.tiledesk.com)
 
-# Components
+# SDKs
 * [Web SDK](Web SDK.md) for further details. 
-* Android SDK coming soon
-* iOS SDK coming soon
+* [Android SDK](https://github.com/Tiledesk/tiledesk-android-sdk)
+* [iOS SDK](https://github.com/Tiledesk/tiledesk-ios-sdk)
 * API coming soon
 
 # Install on your server
