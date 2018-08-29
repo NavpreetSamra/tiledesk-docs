@@ -47,11 +47,11 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **wellcomeMsg**: Set the widget welcome message. Value type : string
 
-* **hideHeaderCloseButton**: Hide the close button in the widget header. Permitted values: true, false. The default value is false.
-
 * **projectname**. If you want to display the project name in the conversations, set the projectname field. It is advisable if you need to manage multiple projects. Find your TileDesk Project Name in the TileDesk Dashboard. Value type : string
 
 * **lang** : With this configuration it is possible to force the widget lang. The widget will try to get the browser lang, if it is not possible it will use the default "en" lang
+
+* **hideHeaderCloseButton**: Hide the close button in the widget header. Permitted values: true, false. The default value is false.
 
 * **isOpen**: if it is true, the chat window is automatically opened when the widget is loaded. Permitted values: true, false. Default value : false
 
