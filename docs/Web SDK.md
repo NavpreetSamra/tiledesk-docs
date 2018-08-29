@@ -53,8 +53,9 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **lang** : With this configuration it is possible to force the widget lang. The widget will try to get the browser lang, if it is not possible it will use the default "en" lang
 
-* **isOpen**: if it is true, the chat window is automatically opened when the widget is loaded. Permitted values: true, false, Default value : false
+* **isOpen**: if it is true, the chat window is automatically opened when the widget is loaded. Permitted values: true, false. Default value : false
 
+* **fullscreenMode**: if it is true, the chat window is opened in fullscreen mode. Permitted values: true, false. Default value : false
 
 ### Example 1. Widget with user fullname and email
 
