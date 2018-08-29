@@ -53,9 +53,9 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **hideHeaderCloseButton**: Hide the close button in the widget header. Permitted values: true, false. The default value is false.
 
-* **isOpen**: if it is true, the chat window is automatically opened when the widget is loaded. Permitted values: true, false. Default value : false
+* **isOpen**: if it is true, the chat window is automatically open when the widget is loaded. Permitted values: true, false. Default value : false
 
-* **fullscreenMode**: if it is true, the chat window is opened in fullscreen mode. Permitted values: true, false. Default value : false
+* **fullscreenMode**: if it is true, the chat window is open in fullscreen mode. Permitted values: true, false. Default value : false
 
 ### Example 1. Widget with user fullname and email
 
