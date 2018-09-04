@@ -57,6 +57,10 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **fullscreenMode**: if it is true, the chat window is open in fullscreen mode. Permitted values: true, false. Default value : false
 
+* **themeColor**: Main color of the widget. Example: rgb(20,200,100)
+
+* **themeTextColor**: Text color of the widget. Example: rgb(20,200,100)
+
 ### Example 1. Widget with user fullname and email
 
 ```
