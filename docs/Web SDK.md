@@ -57,9 +57,9 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **fullscreenMode**: if it is true, the chat window is open in fullscreen mode. Permitted values: true, false. Default value : false
 
-* **themeColor**: allows you to change the main color of the widget (i.e., among the others, the color of the header and the color of the launcher button). Permitted values: Hex color codes, e.g. #87BC65 and RGB color codes, e.g. rgb(135,188,101)
+* **themeColor**: allows you to change the main widget's color (color of the header, color of the launcher button, other minor elements). Permitted values: Hex color codes, e.g. #87BC65 and RGB color codes, e.g. rgb(135,188,101)
 
-* **themeForegroundColor**: allows you to change the color of the text and of the icons. Permitted values: Hex color codes, e.g. #425635 and RGB color codes, e.g. rgb(66,86,53)
+* **themeForegroundColor**: allows you to change text and icons' color. Permitted values: Hex color codes, e.g. #425635 and RGB color codes, e.g. rgb(66,86,53)
 
 ### Example 1. Widget with user fullname and email
 
