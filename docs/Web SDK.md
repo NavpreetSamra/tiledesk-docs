@@ -61,6 +61,8 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **themeForegroundColor**: allows you to change text and icons' color. Permitted values: Hex color codes, e.g. #425635 and RGB color codes, e.g. rgb(66,86,53)
 
+* **allowTranscriptDownload**: allows the user to download the chat transcript. The download button appears when the chat is closed by the operator. Permitter values: true, false. Default value: false
+
 ### Example 1. Widget with user fullname and email
 
 ```
