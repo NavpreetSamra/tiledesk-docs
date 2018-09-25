@@ -47,7 +47,7 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **wellcomeMsg**: Set the widget welcome message. Value type : string
 
-* **projectname**. If you want to display the project name in the conversations, set the projectname field. It is advisable if you need to manage multiple projects. Find your TileDesk Project Name in the TileDesk Dashboard. Value type : string
+* **widgetTitle**: Set the widget title label shown in the widget header. Value type : string. The default value is Tiledesk.
 
 * **lang** : With this configuration it is possible to force the widget lang. The widget will try to get the browser lang, if it is not possible it will use the default "en" lang
 
@@ -60,6 +60,8 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 * **themeColor**: allows you to change the main widget's color (color of the header, color of the launcher button, other minor elements). Permitted values: Hex color codes, e.g. #87BC65 and RGB color codes, e.g. rgb(135,188,101)
 
 * **themeForegroundColor**: allows you to change text and icons' color. Permitted values: Hex color codes, e.g. #425635 and RGB color codes, e.g. rgb(66,86,53)
+
+* **showWidgetNameInConversation**. If you want to display the widget title in the conversations, set the showWidgetNameInConversation field to true. It is advisable if you need to manage multiple projects. Value type : boolean. The default value is false.
 
 * **allowTranscriptDownload**: allows the user to download the chat transcript. The download button appears when the chat is closed by the operator. Permitter values: true, false. Default value: false
 
