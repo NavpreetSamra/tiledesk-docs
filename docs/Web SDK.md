@@ -65,6 +65,11 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **allowTranscriptDownload**: allows the user to download the chat transcript. The download button appears when the chat is closed by the operator. Permitter values: true, false. Default value: false
 
+* **marginX**: Set the side margin, left or right depending on the align property
+
+* **marginY**: Set the distance from the page bottom margin
+
+
 ### Example 1. Widget with user fullname and email
 
 ```
