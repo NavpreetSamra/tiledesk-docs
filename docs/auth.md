@@ -21,7 +21,7 @@ To generate the shared secret required for authenticated visitors
 * Open the Dashboard and go to Project Name > Project Settings.
 * Scroll down to the Visitor Authentication section and click the Generate button.
 
-<img src="./tiledesk-project-settings.png"/>
+<img src="https://raw.githubusercontent.com/Tiledesk/tiledesk-docs/master/docs/tiledesk-project-settings.png"/>
 
 Note:The shared secret is intended to remain secure. As a result, it will only appear in full one time. If you don’t have access to the shared secret and need the full secret to create your token, you can reset the secret by clicking the 'Generate' button.
 Regenerating a new shared secret will revoke the previous token. If you have concerns the shared secret has been compromised, you should regenerate a new one. If you need to rotate the keys, you should schedule it when Chat is offline because regenerating the secret cause visitors to be disconnected from the widget.
@@ -107,4 +107,4 @@ A few things are updated in the Chat dashboard when an agent starts chatting wit
 
 First, the agent will be able to tell the visitor is authenticated by the authenticated checkmark overlay on the visitor's avatar.
 
-<img src="./authuser.png"/>
+<img src="https://raw.githubusercontent.com/Tiledesk/tiledesk-docs/master/docs/authuser.png"/>
