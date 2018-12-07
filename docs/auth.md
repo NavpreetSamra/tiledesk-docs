@@ -1,5 +1,7 @@
 # Enabling authenticated visitors in the Chat widget
 
+Require Widget Javascript API v2
+
 ## Overview
 
 You can configure your widget to authenticate visitors using the Javascript API and JWT token.
