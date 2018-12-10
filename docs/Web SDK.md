@@ -43,7 +43,7 @@ You can customize the widget passing these parameters to  window.tiledeskSetting
 
 * **calloutTitle** : The title of the callout window.
 
-* **ccalloutMsg** :  The message of the callout window.
+* **calloutMsg** :  The message of the callout window.
 
 * **userFullname**: Current user fullname. Set this parameter to specify the visitor fullname.
 
