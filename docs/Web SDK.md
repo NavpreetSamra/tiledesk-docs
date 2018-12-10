@@ -1,5 +1,7 @@
 # Web SDK version 2.0
 
+For the old versione of the widget see [here](./sdkv1.md). 
+
 This guide will show you how to get started as quickly as possible with the Web SDK from TileDesk. The Web SDK will give businesses and developers the flexibility to build and customize a chat experience that meet their specific design/brand requirements.
 
 # Install the Web HTML Widget
