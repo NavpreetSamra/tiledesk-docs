@@ -276,10 +276,3 @@ Example:
       }
 </script>
 ```
-
-
-
-
-# Enabling authenticated visitors in the Chat widget
-You can configure your widget to authenticate visitors using the Javascript API and JWT token.
-More info [here](./auth.md)
