@@ -15,8 +15,7 @@ Tiledesk uses Chat21 as a chat messaging platform. More info about Chat21 [here]
 
 Install on your server the following components:
 
-* [Chat21 Cloud Functions](https://github.com/chat21/chat21-cloud-functions)
-** Enable [Support mode](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#support-mode)
+* [Chat21 Cloud Functions](https://github.com/chat21/chat21-cloud-functions). After installing it enable [Support mode](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#support-mode)
 
 * [Chat21 Web Widget](https://github.com/chat21/chat21-web-widget)
 
