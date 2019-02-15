@@ -15,15 +15,17 @@ Tiledesk uses Chat21 as a chat messaging platform. More info about Chat21 [here]
 
 Install on your server the following components:
 
-* [Tiledesk API NodeJs](https://github.com/Tiledesk/tiledesk-api-nodejs)
-
-* [Tiledesk Backend Dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
-
 * [Chat21 Cloud Functions](https://github.com/chat21/chat21-cloud-functions)
 
 * [Chat21 Web Widget](https://github.com/chat21/chat21-web-widget)
 
 * [Chat21 Ionic Web App](https://github.com/chat21/chat21-ionic)
+
+* [Tiledesk API NodeJs](https://github.com/Tiledesk/tiledesk-api-nodejs)
+
+* [Tiledesk Backend Dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
+
+
 
 ## Mobile apps
 
