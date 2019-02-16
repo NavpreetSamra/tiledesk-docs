@@ -1,4 +1,5 @@
-# Welcome to the Tiledesk documentation
+# Welcome 
+
 Tiledesk is an Open Source Live Chat for Web and Mobile Support with integrated Bot.
 Create a free account to [https://www.tiledesk.com](https://www.tiledesk.com).
 
