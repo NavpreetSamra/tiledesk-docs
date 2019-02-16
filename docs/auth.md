@@ -1,4 +1,4 @@
-# Enabling authenticated visitors in the Chat widget
+# Enabling authenticated visitors
 
 Require Widget Javascript API v2
 
