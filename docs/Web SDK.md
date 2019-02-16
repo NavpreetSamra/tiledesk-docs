@@ -1,4 +1,4 @@
-# Web SDK version 2.0
+# Web SDK ver 2.0
 
 For the old versione of the widget see [here](./sdkv1.md). 
 
