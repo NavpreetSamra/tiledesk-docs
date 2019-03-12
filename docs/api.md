@@ -5,16 +5,17 @@
 Tiledesk is a live chat solution that helps businesses increase sales conversion by engaging important leads on their websites. It is our goal to help many of these businesses use the Tiledesk API (the "API") to automate and enhance their customer support with Tiledesk.
 
 ## The API
-This is the documentation for the Tiledesk REST API. Read the contents of this page carefully, including the Restrictions and Responsibilities, to understand how to be a good API citizen.
+This is the documentation for the Tiledesk REST API. Read the contents of this page carefully to understand how to be a good API citizen.
 
 Endpoints are documented with the HTTP method for the request and a partial resource identifier. Example:
 
 GET /v1/
+
 Prepend https://api.tiledesk.com to the resource identifier to get the full endpoint URL:
 
 https://api.tiledesk.com/v1/
 
-The examples in the docs are cURL statements. You can run the statements on a command line to try out different API requests. To learn more, see Installing and using cURL. In Windows, you'll need to modify some of the examples in the docs to make them work. See Using cURL in Windows.
+The examples in the docs are cURL statements. You can run the statements on a command line to try out different API requests. In Windows, you'll need to modify some of the examples in the docs to make them work.
 
 ## Security and Authentication
 This API is an SSL-only API, regardless of how you may have your account configured. You must be a Tiledesk user to make API requests.
@@ -38,7 +39,9 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5ab0f3275
 Use the following authentication format with a JWT token.
 
 
-### Obtein JWT Token
+### Get a JWT Token
+
+Use the signin method to get a valid JWT token:
 
 #### Example
 ```
