@@ -1,7 +1,7 @@
 # Introduction
 Webhooks are a powerful resource that you can use to automate your use cases and improve your productivity.
 
-Unlike the API resources, which represent static data that you can create, update and retrieve as needed, webhooks represent dynamic resources. You can configure them to automatically notify you when for example a new request occurXXX.
+Unlike the API resources, which represent static data that you can create, update and retrieve as needed, webhooks represent dynamic resources. You can configure them to automatically notify you when for example a new request occurs.
 
 
 # Use cases
@@ -36,6 +36,8 @@ Each webhook consists of the following properties:
 
 Each webhook is a HTTP POST request made to the URL that you provide. The request’s POST body contains webhook information in JSON format.
 
+
+```
 {
    "hook":{
       "_id":"5c4f1c2e081bde0016cd61d4",
@@ -59,7 +61,7 @@ Each webhook is a HTTP POST request made to the URL that you provide. The reques
        ...
    }
 }
-
+```
 
 Each webhook contains the following properties:
 
