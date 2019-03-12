@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Web SDK](web-sdk.md)
-* [Widget Authentication](auth.md)
+   * [Widget Authentication](auth.md)
 * [Android SDK](https://github.com/Tiledesk/tiledesk-android-sdk)
 * [iOS SDK](https://github.com/Tiledesk/tiledesk-ios-sdk)
 * [REST API](https://github.com/Tiledesk/tiledesk-api-nodejs/blob/master/docs/api.md)
