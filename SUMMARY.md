@@ -1,9 +1,16 @@
-# Table of contents
+# Summary
+
+## Widget
 
 * [Web SDK](web-sdk.md)
    * [Widget Authentication](auth.md)
+
+## Mobile SDKs
 * [Android SDK](https://github.com/Tiledesk/tiledesk-android-sdk)
 * [iOS SDK](https://github.com/Tiledesk/tiledesk-ios-sdk)
+
+## Other Components
+
 * [REST API](https://github.com/Tiledesk/tiledesk-api-nodejs/blob/master/docs/api.md)
 * [Chat REST API](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/api.md)
 * [Chat21 Cloud Functions](https://github.com/chat21/chat21-cloud-functions)
