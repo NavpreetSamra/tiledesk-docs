@@ -3,7 +3,7 @@
 ## Widget
 
 * [Web SDK](web-sdk.md)
-   * [Widget Authentication](auth.md)
+* [Widget Authentication](auth.md)
 
 ## Mobile SDKs
 * [Android SDK](https://github.com/Tiledesk/tiledesk-android-sdk)
