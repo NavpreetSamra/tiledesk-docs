@@ -79,7 +79,7 @@ Note: Tiledesk webhooks are sent with Content-Type: application/json header, so 
 
 
 # Webhook Models
-## Webhook topics
+## Webhook events
 
 The following Events are available and you can be notified when an action relating to that event occurs. 
 
@@ -95,10 +95,6 @@ The following Events are available and you can be notified when an action relati
 A notification object contains the following fields:
 TODO
 
-
-
-## Handling webhook notifications
-When you setup a subscription you will receive notifications on your chosen topics. How you handle those notifications, i.e. the HTTP status code returned, will determine the subsequent state of that subscription. Please see below for a list of how a subscription will respond to these status codes
 
 ## Signed Notifications
 Each webhook notification is signed by Tiledesk via an x-hook-secret header. We do this so that you can verify the notification came from Tiledesk.
