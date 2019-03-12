@@ -6,10 +6,12 @@ Welcome on Tiledesk documentation
 * [Web SDK](web-sdk.md)
 * [Widget Authentication](auth.md)
 
-## Server Components
+## APIs
 
 * [REST API](api.md)
 * [WebHoook](webhook.md)
+* [Chat REST API](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/api.md)
+
 
 ## Mobile apps
 
@@ -22,13 +24,7 @@ Welcome on Tiledesk documentation
 
 ## Other Components
 
-* [Chat REST API](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/api.md)
 * [Chat21 Cloud Functions](https://github.com/chat21/chat21-cloud-functions)
 * [Chat21 Web Widget](https://github.com/chat21/chat21-web-widget)
 * [Chat21 Ionic Web App](https://github.com/chat21/chat21-ionic)
 * [Tiledesk Backend Dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
-
-
-## Source Code
-* [Tiledesk project](https://github.com/tiledesk)
-* [Chat21 project](https://github.com/chat21)
