@@ -30,7 +30,7 @@
 * [Chat21 Ionic Web App](https://github.com/chat21/chat21-ionic)
 * [Tiledesk Backend Dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
 
-## Source Code
+## GitHub Projects
 
 * [Tiledesk project](https://github.com/tiledesk)
 * [Chat21 project](https://github.com/chat21)
