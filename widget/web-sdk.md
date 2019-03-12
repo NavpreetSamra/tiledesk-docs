@@ -2,8 +2,6 @@
 
 ## Web SDK ver 2.0
 
-For the old versione of the widget see [here]().
-
 This guide will show you how to get started as quickly as possible with the Web SDK from TileDesk. The Web SDK will give businesses and developers the flexibility to build and customize a chat experience that meet their specific design/brand requirements.
 
 ## Install the Web HTML Widget
@@ -262,4 +260,5 @@ Example:
 
 ## Enabling authenticated visitors in the Chat widget
 
-You can configure your widget to authenticate visitors using the Javascript API and JWT token. More info [here]()
+You can configure your widget to authenticate visitors using the Javascript API and JWT token. More info [Widget Authentication](auth.md)
+
