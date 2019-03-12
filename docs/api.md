@@ -9,23 +9,26 @@ This is the documentation for the Tiledesk REST API. Read the contents of this p
 
 Endpoints are documented with the HTTP method for the request and a partial resource identifier. Example:
 
-GET /v1/
+**GET /v1/**
 
 Prepend https://api.tiledesk.com to the resource identifier to get the full endpoint URL:
 
-https://api.tiledesk.com/v1/
+**https://api.tiledesk.com/v1/**
 
 The examples in the docs are cURL statements. You can run the statements on a command line to try out different API requests. In Windows, you'll need to modify some of the examples in the docs to make them work.
 
 ## Security and Authentication
 This API is an SSL-only API, regardless of how you may have your account configured. You must be a Tiledesk user to make API requests.
 
+Tiledesk supports two authentication methods:
+* Basic Authentication
+* JWT Authentication
 
 ### Basic authentication
 
 Use the following authentication format with your email address and password:
 
-{email_address}:{password}
+**{email_address}:{password}**
 
 #### Example
 
@@ -36,19 +39,19 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5ab0f3275
 
 ### JWT authentication
 
-Use the following authentication format with a JWT token.
-
-
-### Get a JWT Token
-
 Use the signin method to get a valid JWT token:
 
-#### Example
+```
+curl -v -X POST -d 'email=<YOUR_EMAIL>&password=<YOUR_PASSWORD>' https://api.tiledesk.com/v1/auth/signin
+```
+
+Example
+
 ```
 curl -v -X POST -d 'email=andrea.leo@f21.it&password=123456' https://api.tiledesk.com/v1/auth/signin
 ```
 
-#### Example
+Example: How to use JWT token
 
 ```
 curl -v -X GET -H 'Authorization: JWT <JWT_TOKEN>' https://api.tiledesk.com/v1/5ab0f32757066e0014bfd718/departments
@@ -61,15 +64,15 @@ This API is rate limited. We only allow a certain number of requests per minute.
 If the rate limit is exceeded, Tiledesk will respond with a HTTP 429 Too Many Requests response code and a body that details the reason for the rate limiter kicking in.
 
 #### Request Format
-This is a JSON-only API. You must supply a Content-Type: application/json header on PUT and POST requests. Sometimes you have to set an Accept: application/json header on a specific request. You may get a text/plain response in case of an error such as a bad request. You should treat this as an error you need to take action on.
+This is a JSON-only API. You must supply a *Content-Type: application/json* header on PUT and POST requests. Sometimes you have to set an Accept: application/json header on a specific request. You may get a text/plain response in case of an error such as a bad request. You should treat this as an error you need to take action on.
 
 #### Response Format
 Tiledesk responds to successful requests with HTTP status codes in the 200 or 300 range. 
 When you create or update a resource, Tiledesk renders the resulting JSON representation in the response body.
-Time stamps use UTC time and their format is ISO8601.
+Time stamps use UTC time and their format is **ISO8601**.
 We respond to unsuccessful requests with HTTP status codes in the 400 range. The response may be "text/plain" content type for API level error messages (such as when trying to call the API without SSL). If you see a response from a known endpoint that looks like plain text, you probably made a syntax error in your REST call. If you ever experience responses with status codes in the 500 range, Tiledesk may be experiencing internal issues or having a scheduled maintenance (during which we send a 503 Service Unavailable status code). Please check the status page in such cases for any known issues.
 
-When building an API client, we recommend treating any 500 status codes as a warning or temporary state. However, if the status persists and we don't have a publicly announced maintenance or service disruption, contact us at info@frontiere21.it
+When building an API client, we recommend treating any 500 status codes as a warning or temporary state. However, if the status persists and we don't have a publicly announced maintenance or service disruption, contact us at *info@frontiere21.it*.
 
 
 ### Legal notices
@@ -84,7 +87,7 @@ Tiledesk may modify the attributes and resources available to the API and our po
 You can use the API to get or set lead information.
 
 ### Get all leads
-GET /v1/leads
+*GET /v1/leads*
 
 Allows an account to list all the leads.
 
@@ -93,7 +96,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 ```
 
 ### Get a lead
-GET /v1/leads/{lead_id}
+*GET /v1/leads/{lead_id}*
 
 Fetches a lead by his or her Lead ID
 
@@ -103,7 +106,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 
 
 ### Create a Lead
-POST /v1/leads
+*POST /v1/leads*
 
 Allows to add more leads.
 
@@ -118,7 +121,7 @@ You can use the API to get or set request information.
 
 
 ### Get all requests
-GET /v1/requests
+*GET /v1/requests*
 
 Allows an account to list all the requests for the project.
 
@@ -130,7 +133,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 
 
 ### Get a request by request_id field
-GET /v1/requests/{request_id}
+*GET /v1/requests/{request_id}*
 
 Fetches a lead by his or her request_id
 
