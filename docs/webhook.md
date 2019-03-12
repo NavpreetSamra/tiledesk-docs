@@ -99,8 +99,6 @@ Each webhook request contains the following properties:
 
 * hook – return the subscription object that triggered the webhook. 
 
-* token – your authentication credentials that let you call Tiledesk’s REST API methods. You won’t need to use them unless you want to make a call to Tiledesk’s API right when you receive a webhook. In that case, you just need to pass these token credentials in your API call. 
-
 * payload – It contains the data of the webhook.
 
 When your server receives a webhook from Tiledesk, it should respond with HTTP 200 response. Otherwise, Tiledesk will retry sending the webhook to your service for a number of times unless it receives the correct HTTP 200 response.
