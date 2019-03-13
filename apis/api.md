@@ -380,7 +380,7 @@ Fetches a lead by his or her request\_id
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=false %}
+{% api-method-parameter name="id" type="string" required=true %}
 the request identifier
 {% endapi-method-parameter %}
 
