@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Components](components.md)
 
 ## Widget
 
@@ -12,6 +11,8 @@
 
 * [REST API](server-components/api.md)
 * [WebHoook](server-components/webhook.md)
+* [Components](server-components/components-1/README.md)
+  * [Components](server-components/components-1/components.md)
 
 ## Mobile apps
 
