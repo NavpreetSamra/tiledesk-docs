@@ -207,6 +207,18 @@ the lead identifier
  The project\_id is a unique code assigned to your project when you create it in Tiledesk
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+authorization token. Basic Auth or JWT
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+use "application/json" value
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
