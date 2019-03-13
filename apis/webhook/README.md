@@ -18,7 +18,7 @@ For instance if you’re integrating a marketing automation tool, you could add 
 
 To use this tool you need to have basic knowledge about webhooks and Tiledesk authorization protocol.
 
-This tutorial is will not be helpful for integration that pulls data on demand \(not in reaction to some Tiledesk event\). If you just want to pull Tiledesk reports on user request, you’d rather just use [REST API](api.md).
+This tutorial is will not be helpful for integration that pulls data on demand \(not in reaction to some Tiledesk event\). If you just want to pull Tiledesk reports on user request, you’d rather just use [REST API](../api/).
 
 ### Prerequisites
 

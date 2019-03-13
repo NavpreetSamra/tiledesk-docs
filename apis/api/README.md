@@ -16,7 +16,7 @@ Your Project ID \(this appears as project\_id in your code\) is a unique code as
 
 The easiest way to find your Project ID is to check the URL of any page you have open in Tiledesk. It's the code that comes after /project/ in the URL. So for example, if we check the URL below you can see that the Project ID is _5c88a82990996000173cd4d1_.
 
-![](../.gitbook/assets/image.png)
+![](../../.gitbook/assets/image.png)
 
 Your Project ID is also available on the top of the Project Setting page of your dashboard.
 

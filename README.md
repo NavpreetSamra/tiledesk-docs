@@ -9,8 +9,11 @@
 
 ## APIs
 
-* [REST API](apis/api.md)
-* [WebHoook](apis/webhook.md)
+* [REST API](apis/api/README.md)
+  * [Requests](apis/api/requests.md)
+  * [Leads](apis/api/leads.md)
+* [WebHoook](apis/webhook/README.md)
+  * [Subscriptions](apis/webhook/subscriptions.md)
 
 ## Components
 
