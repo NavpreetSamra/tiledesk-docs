@@ -89,11 +89,99 @@ When building an API client, we recommend treating any 500 status codes as a war
 
 You can use the API to get or set lead information.
 
-### Get all leads
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
+{% api-method-summary %}
+Get all leads
+{% endapi-method-summary %}
 
-_GET /v1/{project\_id}/leads_
-
+{% api-method-description %}
 Allows an account to list all the leads.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="project\_id" type="string" required=false %}
+the  Project Id is a unique code assigned to your project when you create it in Tiledesk.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+authorization token. Basic Auth or JWT
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+use "application/json" value
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="sortField" type="string" required=false %}
+what field to sort the results by.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="direction" type="string" required=false %}
+sort direction: 1 or -1. Return the results in ascending or descending order. _defaults to desc_
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="email" type="string" required=false %}
+search a lead by the email address
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page" type="string" required=false %}
+what page of results to fetch. defaults to first page.
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+   "perPage":40,
+   "count":179,
+   "leads":[
+      {
+         "_id":"5c81593adf767b0017d1aa66",
+         "updatedAt":"2019-03-07T17:47:38.393Z",
+         "createdAt":"2019-03-07T17:47:38.393Z",
+         "lead_id":"SRbb2PfbSFcgICv9VQBcURZeloh1",
+         "fullname":"Guest",
+         "attributes":{
+         ...
+         },
+         "id_project":"5b55e806c93dde00143163dd",
+         "createdBy":"system",
+         "__v":0
+      },
+      {
+         "_id":"5c81565edf767b0017d1aa35",
+         "updatedAt":"2019-03-07T17:35:26.132Z",
+         "createdAt":"2019-03-07T17:35:26.132Z",
+         "lead_id":"WTteQpKpGZN1aElfFYCP9YPaaLN2",
+         "fullname":"Guest",
+         "attributes":{
+          ...
+         },
+         "id_project":"5b55e806c93dde00143163dd",
+         "createdBy":"system",
+         "__v":0
+      },
+      ...
+   ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Example
 
 ```text
 curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads

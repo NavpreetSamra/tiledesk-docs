@@ -1,5 +1,5 @@
 ---
-description: Below a list of the Tiledesk components.
+description: Below the Tiledesk components.
 ---
 
 # Components
