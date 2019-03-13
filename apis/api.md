@@ -10,25 +10,25 @@ This is the documentation for the Tiledesk REST API. Read the contents of this p
 
 Endpoints are documented with the HTTP method for the request and a partial resource identifier. Example:
 
-**GET /v1/&lt;project\_id&gt;**
+**GET /v1/{project\_id}**
 
 Your Project ID \(this appears as project\_id in your code\) is a unique code assigned to your project when you create it in Tiledesk. There are a few ways you can find your Project ID. 
 
-The easiest way to find your Project ID is to check the URL of any page you have open in Tiledesk. It's the code that comes after /project/ in the URL. So for this example project, if we check the URL we can see that the Project ID is _5c88a82990996000173cd4d1_. 
+The easiest way to find your Project ID is to check the URL of any page you have open in Tiledesk. It's the code that comes after /project/ in the URL. So for example, if we check the URL below you can see that the Project ID is _5c88a82990996000173cd4d1_. 
 
 ![](../.gitbook/assets/image.png)
 
-Your project ID is also available on the top of the Project Setting page of your dashboard.
+Your Project ID is also available on the top of the Project Setting page of your dashboard.
 
 To use the API prepend **https://api.tiledesk.com** to the resource identifier to get the full endpoint URL:
 
-**https://api.tiledesk.com/v1/&lt;project\_id&gt;**
+**https://api.tiledesk.com/v1/{project\_id}**
 
 The examples in the docs are cURL statements. You can run the statements on a command line to try out different API requests. In Windows, you'll need to modify some of the examples in the docs to make them work.
 
 ## Security and Authentication
 
-This API is an SSL-only API, regardless of how you may have your account configured. You must be a Tiledesk user to make API requests.
+This API is an SSL-only API. You must be a Tiledesk user to make API requests.
 
 Tiledesk supports two authentication methods:
 
@@ -49,7 +49,7 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5ab0f3275
 
 ### JWT authentication
 
-Use the signin method to get a valid JWT token:
+Use the sign-in method to get a valid JWT token:
 
 ```text
 curl -v -X POST -d 'email=<YOUR_EMAIL>&password=<YOUR_PASSWORD>' https://api.tiledesk.com/v1/auth/signin
@@ -79,7 +79,9 @@ This is a JSON-only API. You must supply a _Content-Type: application/json_ head
 
 #### Response Format
 
-Tiledesk responds to successful requests with HTTP status codes in the 200 or 300 range. When you create or update a resource, Tiledesk renders the resulting JSON representation in the response body. Time stamps use UTC time and their format is **ISO8601**. We respond to unsuccessful requests with HTTP status codes in the 400 range. The response may be "text/plain" content type for API level error messages \(such as when trying to call the API without SSL\). If you see a response from a known endpoint that looks like plain text, you probably made a syntax error in your REST call. If you ever experience responses with status codes in the 500 range, Tiledesk may be experiencing internal issues or having a scheduled maintenance \(during which we send a 503 Service Unavailable status code\). Please check the status page in such cases for any known issues.
+Tiledesk responds to successful requests with HTTP status codes in the 200 or 300 range. When you create or update a resource, Tiledesk renders the resulting JSON representation in the response body. Time stamps use UTC time and their format is **ISO8601**. 
+
+We respond to unsuccessful requests with HTTP status codes in the 400 range. The response may be "text/plain" content type for API level error messages \(such as when trying to call the API without SSL\). If you see a response from a known endpoint that looks like plain text, you probably made a syntax error in your REST call. If you ever experience responses with status codes in the 500 range, Tiledesk may be experiencing internal issues or having a scheduled maintenance \(during which we send a 503 Service Unavailable status code\). Please check the status page in such cases for any known issues.
 
 When building an API client, we recommend treating any 500 status codes as a warning or temporary state. However, if the status persists and we don't have a publicly announced maintenance or service disruption, contact us at _info@frontiere21.it_.
 
@@ -89,7 +91,7 @@ You can use the API to get or set lead information.
 
 ### Get all leads
 
-_GET /v1/&lt;project\_id&gt;leads_
+_GET /v1/{project\_id}/leads_
 
 Allows an account to list all the leads.
 
@@ -99,7 +101,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 
 ### Get a lead
 
-_GET /v1/&lt;project\_id&gt;/leads/{lead\_id}_
+_GET /v1/{project\_id}/leads/{lead\_id}_
 
 Fetches a lead by his or her Lead ID
 
@@ -109,7 +111,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 
 ### Create a Lead
 
-_POST /v1/&lt;project\_id&gt;/leads_
+_POST /v1/{project\_id}/leads_
 
 Allows to add more leads.
 
@@ -119,11 +121,11 @@ curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 
 
 ## Requests
 
-You can use the API to get or set request information.
+You can use the API to get the request information.
 
 ### Get all requests
 
-_GET /v1/&lt;project\_id&gt;/requests_
+_GET /v1/{project\_id}/requests_
 
 Allows an account to list all the requests for the project.
 
@@ -133,7 +135,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 
 ### Get a request by request\_id field
 
-_GET /v1/&lt;project\_id&gt;/requests/{request\_id}_
+_GET /v1/{project\_id}/requests/{request\_id}_
 
 Fetches a lead by his or her request\_id
 
