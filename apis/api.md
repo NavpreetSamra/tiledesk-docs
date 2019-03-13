@@ -275,6 +275,20 @@ authorization token. Basic Auth or JWT
 use "application/json" value
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="email" type="string" required=false %}
+the lead email address
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="lead\_id" type="string" required=true %}
+the external id of the lead
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="fullname" type="string" required=false %}
+The lead fullname
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
