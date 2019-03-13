@@ -18,15 +18,15 @@ For instance if you’re integrating a marketing automation tool, you could add 
 
 To use this tool you need to have basic knowledge about webhooks and Tiledesk authorization protocol.
 
-This tutorial is will not be helpful for integration that pulls data on demand \(not in reaction to some Tiledesk event\). If you just want to pull Tiledesk reports on user request, you’d rather just use REST API.
+This tutorial is will not be helpful for integration that pulls data on demand \(not in reaction to some Tiledesk event\). If you just want to pull Tiledesk reports on user request, you’d rather just use [REST API](api.md).
 
 ### Prerequisites
 
-You’ll need a Tiledesk Account. Sign up to your Dashboard.
+You’ll need a Tiledesk Account. Sign up to the [Tiledesk Dashboard ](https://support.tiledesk.com/dashboard)to create a new account.
 
 ## RESTHooks
 
-Tiledek uses RestHook patterns. REST Hooks itself is not a specification, it is a collection of patterns that treat webhooks like subscriptions. These subscriptions are manipulated via a REST API just like any other resource. More info here: [http://resthooks.org](http://resthooks.org)
+Tiledesk uses RestHook patterns. REST Hooks itself is not a specification, it is a collection of patterns that treat webhooks like subscriptions. These subscriptions are manipulated via a REST API just like any other resource. More info about Rest Hook [here](http://resthooks.org).
 
 Tiledesk can send notifications when some particular action is performed. Such a notification is called a webhook – it’s just a simple HTTP request that Tiledesk sends to your server when a particular event occurs.
 
@@ -102,7 +102,7 @@ Each webhook request contains the following properties:
 
 When your server receives a webhook from Tiledesk, it should respond with HTTP 200 response. Otherwise, Tiledesk will retry sending the webhook to your service for a number of times unless it receives the correct HTTP 200 response.
 
-Note: Tiledesk webhooks are sent with Content-Type: application/json header, so please make sure that your service can handle such requests.
+Note: Tiledesk webhooks are sent with _Content-Type: application/json_ header, so please make sure that your service can handle such requests.
 
 ## Webhook Models
 
@@ -117,11 +117,16 @@ The following Events are available and you can be notified when an action relati
 | request.close | Subscribe to request being closed |
 | message.create | Subscribe to messages creations |
 
-## Webhook Notification object
+### Webhook Notification object
 
 A notification object contains the following fields: 
 
+* Hook attribute
+* Payload attribute
+
 #### Hook Attribute
+
+Hook attribute contains the subscription object that triggered the webhook.
 
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
@@ -137,5 +142,5 @@ Payload is the data associated with the notification.
 
 ### Signed Notifications
 
-Each webhook notification is signed by Tiledesk via an x-hook-secret header. We do this so that you can verify the notification came from Tiledesk.
+Each webhook notification is signed by Tiledesk via an _x-hook-secret_ header. We do this so that you can verify the notification came from Tiledesk.
 
