@@ -117,9 +117,23 @@ The following Events are available and you can be notified when an action relati
 | request.close | Subscribe to request being closed |
 | message.create | Subscribe to messages creations |
 
-### Webhook Notification object
+## Webhook Notification object
 
-A notification object contains the following fields: TODO
+A notification object contains the following fields: 
+
+#### Hook Attribute
+
+| Attribute | Type | Description |
+| :--- | :--- | :--- |
+| \_id | string | The Tiledesk defined id representing the subscription. |
+| createdAt | timestamp | The timestamp the subscription was created. |
+| updatedAt | timestamp | The timestamp the subscription was updated |
+| target | string | The subscription target url |
+| event | string | Corresponds to an event, eg 'lead.create', 'request.create' |
+
+#### Payload 
+
+Payload is the data associated with the notification.
 
 ### Signed Notifications
 
