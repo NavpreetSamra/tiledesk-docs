@@ -101,13 +101,13 @@ Allows an account to list all the leads.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="project\_id" type="string" required=false %}
+{% api-method-parameter name="project\_id" type="string" required=true %}
 the  Project Id is a unique code assigned to your project when you create it in Tiledesk.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 
@@ -187,11 +187,53 @@ Example
 curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads
 ```
 
-### Get a lead
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
+{% api-method-summary %}
+Get a lead by id
+{% endapi-method-summary %}
 
-_GET /v1/{project\_id}/leads/{lead\_id}_
-
+{% api-method-description %}
 Fetches a lead by his or her Lead ID
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+the lead identifier
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="project\_id" type="string" required=true %}
+ The project\_id is a unique code assigned to your project when you create it in Tiledesk
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{  
+         "_id":"5c81593adf767b0017d1aa66",
+         "updatedAt":"2019-03-07T17:47:38.393Z",
+         "createdAt":"2019-03-07T17:47:38.393Z",
+         "lead_id":"SRbb2PfbSFcgICv9VQBcURZeloh1",
+         "fullname":"Guest",
+         "attributes":{ ... },
+         "id_project":"5b55e806c93dde00143163dd",
+         "createdBy":"system",
+         "__v":0
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Example
 
 ```text
 curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
