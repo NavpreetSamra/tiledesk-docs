@@ -26,7 +26,7 @@ You’ll need a Tiledesk Account. Sign up to your Dashboard.
 
 ## RESTHooks
 
-Tiledek use RestHook patterns. REST Hooks itself is not a specification, it is a collection of patterns that treat webhooks like subscriptions. These subscriptions are manipulated via a REST API just like any other resource. More info here: [http://resthooks.org](http://resthooks.org)
+Tiledek uses RestHook patterns. REST Hooks itself is not a specification, it is a collection of patterns that treat webhooks like subscriptions. These subscriptions are manipulated via a REST API just like any other resource. More info here: [http://resthooks.org](http://resthooks.org)
 
 Tiledesk can send notifications when some particular action is performed. Such a notification is called a webhook – it’s just a simple HTTP request that Tiledesk sends to your server when a particular event occurs.
 
