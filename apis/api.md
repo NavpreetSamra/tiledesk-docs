@@ -249,18 +249,22 @@ Example
 curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
 ```
 
-
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
 {% api-method-summary %}
-Create a new lead
+Get a lead by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows to add more leads.
+Fetches a lead by his or her Lead ID
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+the lead identifier
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="project\_id" type="string" required=true %}
 The project\_id is a unique code assigned to your project when you create it in Tiledesk
 {% endapi-method-parameter %}
