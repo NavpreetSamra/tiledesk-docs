@@ -250,7 +250,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 ```
 
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
 {% api-method-summary %}
 Create a new lead
 {% endapi-method-summary %}
@@ -261,7 +261,6 @@ Allows to add more leads.
 
 {% api-method-spec %}
 {% api-method-request %}
-
 {% api-method-parameter name="project\_id" type="string" required=true %}
 The project\_id is a unique code assigned to your project when you create it in Tiledesk
 {% endapi-method-parameter %}
