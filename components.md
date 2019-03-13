@@ -1,27 +1,20 @@
-# Table of contents
+# Components
 
-* [Introduction](README.md)
-* [Components](components.md)
 
-## Widget
-
-* [Web SDK](widget/web-sdk.md)
-* [Widget Authentication](widget/auth.md)
-
-## Server Components
-
-* [REST API](server-components/api.md)
-* [WebHoook](server-components/webhook.md)
 
 ## Mobile apps
 
 * [Tiledesk Android app](https://github.com/Tiledesk/tiledesk-android)
 * [Tiledesk iOS app](https://github.com/Tiledesk/tiledesk-ios-app)
 
+
+
 ## Mobile SDKs
 
 * [Android SDK](https://github.com/Tiledesk/tiledesk-android-sdk)
 * [iOS SDK](https://github.com/Tiledesk/tiledesk-ios-sdk)
+
+
 
 ## Other Components
 
