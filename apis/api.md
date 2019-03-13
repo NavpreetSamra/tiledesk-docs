@@ -1,6 +1,6 @@
 # REST API
 
-## Introduction
+##  Introduction
 
 Tiledesk is a live chat solution that helps businesses increase sales conversion by engaging important leads on their websites. It is our goal to help many of these businesses use the Tiledesk API \(the "API"\) to automate and enhance their customer support with Tiledesk.
 
