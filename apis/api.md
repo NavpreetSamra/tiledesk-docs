@@ -10,11 +10,19 @@ This is the documentation for the Tiledesk REST API. Read the contents of this p
 
 Endpoints are documented with the HTTP method for the request and a partial resource identifier. Example:
 
-**GET /v1/**
+**GET /v1/&lt;project\_id&gt;**
 
-Prepend [https://api.tiledesk.com](https://api.tiledesk.com) to the resource identifier to get the full endpoint URL:
+Your Project ID \(this appears as project\_id in your code\) is a unique code assigned to your project when you create it in Tiledesk. There are a few ways you can find your Project ID. 
 
-[https://api.tiledesk.com/v1/](https://api.tiledesk.com/v1/)
+The easiest way to find your Project ID is to check the URL of any page you have open in Tiledesk. It's the code that comes after /project/ in the URL. So for this example project, if we check the URL we can see that the Project ID is _5c88a82990996000173cd4d1_. 
+
+![](../.gitbook/assets/image.png)
+
+Your project ID is also available on the top of the Project Setting page of your dashboard.
+
+To use the API prepend **https://api.tiledesk.com** to the resource identifier to get the full endpoint URL:
+
+**https://api.tiledesk.com/v1/&lt;project\_id&gt;**
 
 The examples in the docs are cURL statements. You can run the statements on a command line to try out different API requests. In Windows, you'll need to modify some of the examples in the docs to make them work.
 
@@ -81,7 +89,7 @@ You can use the API to get or set lead information.
 
 ### Get all leads
 
-_GET /v1/leads_
+_GET /v1/&lt;project\_id&gt;leads_
 
 Allows an account to list all the leads.
 
@@ -91,7 +99,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 
 ### Get a lead
 
-_GET /v1/leads/{lead\_id}_
+_GET /v1/&lt;project\_id&gt;/leads/{lead\_id}_
 
 Fetches a lead by his or her Lead ID
 
@@ -101,7 +109,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 
 ### Create a Lead
 
-_POST /v1/leads_
+_POST /v1/&lt;project\_id&gt;/leads_
 
 Allows to add more leads.
 
@@ -115,7 +123,7 @@ You can use the API to get or set request information.
 
 ### Get all requests
 
-_GET /v1/requests_
+_GET /v1/&lt;project\_id&gt;/requests_
 
 Allows an account to list all the requests for the project.
 
@@ -125,7 +133,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 
 ### Get a request by request\_id field
 
-_GET /v1/requests/{request\_id}_
+_GET /v1/&lt;project\_id&gt;/requests/{request\_id}_
 
 Fetches a lead by his or her request\_id
 
