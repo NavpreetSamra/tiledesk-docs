@@ -86,6 +86,7 @@ The following Events are available and you can be notified when an action relati
 | request.update | Subscribe to request being updated |
 | request.close | Subscribe to request being closed |
 | message.create | Subscribe to messages creations |
+| lead.create | Subscribes to leads creations |
 
 ### Webhook Notification object
 
