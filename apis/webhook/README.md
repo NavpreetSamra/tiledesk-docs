@@ -30,7 +30,7 @@ Tiledesk uses RestHook patterns. REST Hooks itself is not a specification, it is
 
 Tiledesk can send notifications when some particular action is performed. Such a notification is called a webhook – it’s just a simple HTTP request that Tiledesk sends to your server when a particular event occurs.
 
-To use RestHook you must create a Subscription. Each Subscription consists of the following properties:
+To use RestHook you must [Create a New Subscription](subscriptions.md#create-a-new-subscription). Each Subscription consists of the following properties:
 
 * event – determines when the webhook is sent to your web server.
 * target – address of your web server the webhook will be sent to.
@@ -89,7 +89,7 @@ The following Events are available and you can be notified when an action relati
 
 ### Webhook Notification object
 
-A notification object contains the following fields: 
+A notification object contains the following fields:
 
 * Hook attribute
 * Payload attribute
@@ -106,7 +106,7 @@ Hook attribute contains the subscription object that triggered the webhook.
 | target | string | The subscription target url |
 | event | string | Corresponds to an event, eg 'lead.create', 'request.create' |
 
-#### Payload 
+#### Payload
 
 Payload is the data associated with the notification.
 
