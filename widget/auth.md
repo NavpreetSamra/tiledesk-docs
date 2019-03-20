@@ -44,7 +44,7 @@ To create a JWT token and add the code to the Chat snippet
 
 2\) Use the code samples below to generate the server side JWT token .
 
-3\) Use the window.tiledesk.signInWithCustomToken Javascript API to provide a function which supplies a fresh JWT every time it is invoked. Below is a code example:
+3\) Use the **window.tiledesk.signInWithCustomToken** Javascript API to provide a function which supplies a fresh JWT every time it is invoked. Below is a code example:
 
 ```text
 window.tiledesk.signInWithCustomToken("<JWT_TOKEN_HERE_GENERATED_SERVER_SIDE>");
@@ -55,6 +55,8 @@ Example:
 ```text
 window.tiledesk.signInWithCustomToken("JWT 12345678...");
 ```
+
+See an [example here](https://github.com/chat21/chat21-web-widget/blob/master/src/test.html).
 
 ### Generate JWT Token Server Side
 
